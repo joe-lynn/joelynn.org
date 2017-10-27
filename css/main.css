@@ -1,8 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+.bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
 
+.logo {
+    color: black;
+    font-family: 'Share Tech Mono', monospace;
+    font-stretch: ultra-expanded;
+    font-size: 400%;
+    display: inline;
+    font-weight: bold;
+}
 
+.slash {
+    font-variant: small-caps;
+    color: black;
+    font-family: 'Share Tech Mono', monospace;
+    font-stretch: ultra-expanded;
+    font-size: 200%;
+    display: inline;
+}
+
+a {
+    font-variant: small-caps;
+    color: black;
+    font-family: 'Share Tech Mono', monospace;
+    font-stretch: ultra-expanded;
+    font-size: 200%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
 
 
 /* ==========================================================================
