@@ -2,6 +2,10 @@
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+img {
+    display: none;
+}
+
 .bottom {
     position: absolute;
     bottom: 0;
@@ -27,7 +31,6 @@
 }
 
 a {
-    font-variant: small-caps;
     color: black;
     font-family: 'Share Tech Mono', monospace;
     font-stretch: ultra-expanded;
