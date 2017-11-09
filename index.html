@@ -1,46 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-        <div class="container">
-            <br>
-            <br>
-            <br>
-            <div class="row">
-                <div class="col-lg-7">
-                    <p class="logo">Joe Lynn</p>
-                </div>
-                <div class="col-lg-5">
-                    <div class="pull-down">
-                        <a href="#work"> Work </a>
-                        <p class="slash"> / </p>
-                        <a href="#about"> About </a>
-                        <p class="slash"> / </p>
-                        <a href="#contact">Contact</a>
-                    </div>
-                </div>
-            </div>
-                <img src="img/tiger.jpg">
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="bower_components/three.js/build/three.js"></script>
+    <script src="bower_components/aquarelle/Aquarelle.js"></script>
+    <script src="bower_components/three.js/examples/js/postprocessing/EffectComposer.js"></script>
+    <script src="bower_components/three.js/examples/js/postprocessing/ClearPass.js"></script>
+    <script src="bower_components/aquarelle/AquarellePass.js"></script>
+    <script src="bower_components/three.js/examples/js/postprocessing/ShaderPass.js"></script>
+    <script src="bower_components/three.js/examples/js/shaders/CopyShader.js"></script>
+    <script src="bower_components/contour.js"></script>
+
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-3.2.1.min.js"></script>
+    <script src="js/vendor/bootstrap.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+<body>
+
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+<div class="container">
+    <br>
+    <br>
+    <br>
+    <div class="row">
+        <div class="col-lg-7">
+            <p class="logo">Joe Lynn</p>
         </div>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="js/vendor/jquery-3.2.1.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
-    </body>
+        <div class="col-lg-5">
+            <div class="pull-down">
+                <a href="https://github.com/joe-lynn"> Work </a>
+                <p class="slash"> / </p>
+                <a href="#about"> About </a>
+                <p class="slash"> / </p>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-6">
+            <div class="fade">
+                <img class="moon" src="img/jimg.jpg">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script>
+    var fade = document.querySelector('.fade');
+    var image = document.getElementsByClassName('moon')[0];
+
+    var aquarelle = new Aquarelle(image, 'img/mask.png', {
+        fromAmplitude: 0,
+        toAmplitude: 20,
+        fromFrequency: 8,
+        toFrequency: 8,
+        autoplay: true,
+        loop: true,
+        fromOffset: -30,
+        toOffset: 50
+    });
+
+    aquarelle.addEventListener('created', function() {
+        var canvas = this.getCanvas();
+        canvas.removeAttribute('style');
+        image.parentNode.insertBefore(canvas, image.nextSibling);
+        image.parentNode.removeChild(image);
+    });
+</script>
+</body>
 </html>
