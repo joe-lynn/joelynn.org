@@ -31,18 +31,25 @@
     <script src="js/main.js"></script>
 
 </head>
-<body>
+<body class="html-background-color">
 
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
 <div class="container">
+
     <br>
     <br>
     <br>
+
     <div class="row">
         <div class="col-lg-7">
-            <p class="logo">Joe Lynn</p>
+            <div class="fade">
+                <img class="moon" src="img/tiger.jpg" width="100" height="100">
+            </div>
+            <div class="logo-center">
+                <p class="logo">Joe Lynn</p>
+            </div>
         </div>
         <div class="col-lg-5">
             <div class="pull-down">
@@ -51,17 +58,6 @@
                 <a href="#about"> About </a>
                 <p class="slash"> / </p>
                 <a href="#contact">Contact</a>
-            </div>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col-md-6">
-
-        </div>
-        <div class="col-md-6">
-            <div class="fade">
-                <img class="moon" src="img/jimg.jpg">
             </div>
         </div>
     </div>
@@ -79,7 +75,7 @@
         toFrequency: 8,
         autoplay: true,
         loop: true,
-        fromOffset: -30,
+        fromOffset: 0,
         toOffset: 50
     });
 

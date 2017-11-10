@@ -9733,7 +9733,7 @@ function WebGLAttributes( gl ) {
 	function remove( attribute ) {
 
 		if ( attribute.isInterleavedBufferAttribute ) attribute = attribute.data;
-		
+
 		var data = buffers[ attribute.uuid ];
 
 		if ( data ) {
@@ -20756,7 +20756,7 @@ function WebGLClipping() {
 		}
 
 		scope.numPlanes = nPlanes;
-		
+
 		return dstArray;
 
 	}
@@ -20909,8 +20909,6 @@ function WebGLUtils ( gl, extensions ) {
  */
 
 function WebGLRenderer( parameters ) {
-
-	console.log( 'THREE.WebGLRenderer', REVISION );
 
 	parameters = parameters || {};
 
