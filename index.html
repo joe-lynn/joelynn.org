@@ -36,23 +36,21 @@
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-<div class="container">
-
-    <br>
-    <br>
-    <br>
 
     <div class="row">
-        <div class="col-lg-7">
+        <div class="col-lg-1">
+
+        </div>
+        <div class="col-lg-6">
             <div class="fade">
-                <img class="moon" src="img/tiger.jpg" width="100" height="100">
+                <img class="moon" src="img/purp3.jpg">
             </div>
             <div class="logo-center">
                 <p class="logo">Joe Lynn</p>
             </div>
         </div>
         <div class="col-lg-5">
-            <div class="pull-down">
+            <div class="menu-center">
                 <a href="https://github.com/joe-lynn"> Work </a>
                 <p class="slash"> / </p>
                 <a href="#about"> About </a>
@@ -62,21 +60,20 @@
         </div>
     </div>
 
-</div>
 
 <script>
     var fade = document.querySelector('.fade');
     var image = document.getElementsByClassName('moon')[0];
 
     var aquarelle = new Aquarelle(image, 'img/mask.png', {
-        fromAmplitude: 0,
-        toAmplitude: 20,
-        fromFrequency: 8,
-        toFrequency: 8,
+        fromAmplitude: 12,
+        toAmplitude: 13,
+        fromFrequency: 10,
+        toFrequency: 11,
         autoplay: true,
         loop: true,
-        fromOffset: 0,
-        toOffset: 50
+        fromOffset: 50,
+        toOffset: 60
     });
 
     aquarelle.addEventListener('created', function() {

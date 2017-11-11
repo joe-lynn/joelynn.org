@@ -4,14 +4,23 @@
    ========================================================================== */
 
 .html-background-color {
-    background-color: papayawhip;
+    background-color: #fffff5;
+}
+
+.low-margin {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.menu-center {
+    position: absolute;
+    top: 25%;
 }
 
 .logo-center {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 200px;
+    left: 130px;
 }
 
 .bottom {
