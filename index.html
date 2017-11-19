@@ -59,6 +59,29 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-lg-7">
+
+        </div>
+        <div class="col-lg-5">
+            <div id="container">
+                <div class="sign-two">
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    <div class="off">W</div>ORK<br>
+                    <i class="fa fa-heart-o" aria-hidden="true"></i>
+                    AB<div class="off">OU</div>T<br>
+                    <i class="fa fa-heart-o heart-off" aria-hidden="true"></i>
+                    CONTACT<br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
 
 
 <script>
@@ -66,14 +89,14 @@
     var image = document.getElementsByClassName('moon')[0];
 
     var aquarelle = new Aquarelle(image, 'img/mask.png', {
-        fromAmplitude: 12,
-        toAmplitude: 13,
-        fromFrequency: 10,
-        toFrequency: 11,
+        fromAmplitude: 0,
+        toAmplitude: 20,
+        fromFrequency: 8,
+        toFrequency: 8,
         autoplay: true,
         loop: true,
-        fromOffset: 74,
-        toOffset: 75
+        fromOffset: 69,
+        toOffset: 70
     });
 
     aquarelle.addEventListener('created', function() {
@@ -82,6 +105,7 @@
         image.parentNode.insertBefore(canvas, image.nextSibling);
         image.parentNode.removeChild(image);
     });
+
 </script>
 </body>
 </html>
