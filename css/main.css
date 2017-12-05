@@ -6,12 +6,32 @@
  * Row with equal height columns
  * --------------------------------------------------
  */
+.pointy {
+    cursor:url(https://www.shareicon.net/data/128x128/2016/07/22/799967_hand_512x512.png), auto;
+}
+
+html {
+    height: 100%;
+}
+
+.j-border {
+    top: 0;
+    left: 0;
+    border: 5px solid #000;
+    width: 99%;
+    min-height: 98%;
+    margin: 0.5%;
+    padding: 0;
+    box-sizing: border-box;
+
+}
 
 .row-eq-height {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
+    height: 98%;
 }
 
 /*
@@ -20,18 +40,11 @@
 .container {
     padding-right: 15px;
     padding-left: 15px;
+    margin: 0;
+    width: 100%;
+    height: 99%;
 }
 
-h4 {
-    margin-top: 25px;
-}
-.row {
-    margin-bottom: 20px;
-}
-.row .row {
-    margin-top: 10px;
-    margin-bottom: 0;
-}
 [class*="col-"] {
     padding-top: 15px;
     padding-bottom: 15px;

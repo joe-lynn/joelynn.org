@@ -31,12 +31,12 @@
     <script src="js/main.js"></script>
 
 </head>
-<body class="html-background-color">
+<body class="html-background-color j-border">
 
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-
+<div class="container">
     <div class="row row-eq-height">
         <div class="col-lg-1">
 
@@ -59,16 +59,17 @@
             </div>
         </div>
     </div>
+</div>
 
 <script>
     var fade = document.querySelector('.fade');
     var image = document.getElementsByClassName('moon')[0];
 
     var aquarelle = new Aquarelle(image, 'img/mask.png', {
-        fromAmplitude: 0,
-        toAmplitude: 20,
-        fromFrequency: 8,
-        toFrequency: 8,
+        fromAmplitude: 12,
+        toAmplitude: 13,
+        fromFrequency: 10,
+        toFrequency: 11,
         autoplay: true,
         loop: true,
         fromOffset: 69,
