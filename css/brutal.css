@@ -5,6 +5,17 @@
     src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/clip.ttf);
 }
 
+@font-face {
+    font-family: logo-font;
+    src: url(../fonts/Special_Elite/SpecialElite-Regular.ttf);
+}
+
+h1 {
+    font-family: logo-font;
+    font-size: 600%;
+    color: #6600ff;
+}
+
 body {
     height: 100%;
     background-image: -webkit-linear-gradient(175deg, #FFC0CB 50%, rgb(0, 217, 152) 50%);
