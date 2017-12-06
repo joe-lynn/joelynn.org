@@ -6,6 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
 
+        @font-face {
+            font-family: 'budmojigglish';
+            src: url('fonts/budmo-jigglish.eot');
+            src: url('fonts/budmo-jigglish.eot?#iefix') format('embedded-opentype'),
+            url('fonts/budmo-jigglish.woff2') format('woff2'),
+            url('fonts/budmo-jigglish.woff') format('woff'),
+            url('fonts/budmo-jigglish.ttf') format('truetype'),
+            url('fonts/budmo-jigglish.svg#budmojigglish') format('svg');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .light-up-letters {
+            display: inline-block;
+            font-family: 'budmojigglish';
+            font-size: 80px;
+            font-weight: 100;
+            color: red;
+        }
+
+        .light-up-letters {
+            text-shadow: 0 0 5px red, 0 0 10px red, 0 0 85px red, 0 0 85px red, 0 0 85px red;
+        }
+
+        .light-up-letters .fade {
+            -webkit-animation: fade 5s linear infinite;
+            animation: fade 5s linear infinite;
+        }
+
+        .light-up-letters .flicker {
+            -webkit-animation: flicker 6s 1s linear infinite;
+            animation: flicker 6s 1s linear infinite;
+        }
+
+        .light-up-letters .sparkle {
+            -webkit-animation: sparkle 3s 3s linear infinite;
+            animation: sparkle 3s 3s linear infinite;
+        }
+
+        @-webkit-keyframes fade {
+            0%,9%,11%,13%,15%,41%,43%,45% {
+                text-shadow: 0 0 5px red, 0 0 10px red, 0 0 85px red, 0 0 85px red, 0 0 85px red;
+                opacity: 1;
+            }
+            10%,12%,14%,42%,44% {
+                opacity: 0.6;
+                text-shadow: none;
+            }
+        }
+
+        @keyframes fade {
+            0%,9%,11%,13%,15%,41%,43%,45% {
+                text-shadow: 0 0 5px red, 0 0 10px red, 0 0 85px red, 0 0 85px red, 0 0 85px red;
+                opacity: 1;
+            }
+            10%,12%,14%,42%,44% {
+                opacity: 0.6;
+                text-shadow: none;
+            }
+        }
+
+        @-webkit-keyframes flicker {
+            51% {
+                text-shadow: 0 0 5px red, 0 0 10px red, 0 0 85px red, 0 0 85px red, 0 0 85px red;
+                opacity: 1;
+            }
+            0%,50%,52%,100% {
+                opacity: 0.6;
+                text-shadow: none;
+            }
+        }
+
+        @keyframes flicker {
+            51% {
+                text-shadow: 0 0 5px red, 0 0 10px red, 0 0 85px red, 0 0 85px red, 0 0 85px red;
+                opacity: 1;
+            }
+            0%,50%,52%,100% {
+                opacity: 0.6;
+                text-shadow: none;
+            }
+        }
+
+        @-webkit-keyframes sparkle {
+            0%,9%,11%,13%,15%,41%,43%,45% {
+                text-shadow: 0 0 5px red, 0 0 10px red, 0 0 85px red, 0 0 85px red, 0 0 85px red;
+                opacity: 1;
+            }
+            10%,12%,14%,42%,44% {
+                opacity: 0.6;
+                text-shadow: none;
+            }
+        }
+
+        @keyframes sparkle {
+            0%,9%,11%,13%,15%,41%,43%,45% {
+                text-shadow: 0 0 5px red, 0 0 10px red, 0 0 85px red, 0 0 85px red, 0 0 85px red;
+                opacity: 1;
+            }
+            10%,12%,14%,42%,44% {
+                opacity: 0.6;
+                text-shadow: none;
+            }
+        }
+
+
+
+
+
         * {
             line-height: 1.2;
             margin: 0;
@@ -24,6 +133,7 @@
             display: table-cell;
             vertical-align: middle;
             margin: 2em auto;
+            background-color: #101010;
         }
 
         h1 {
@@ -53,7 +163,8 @@
     </style>
 </head>
 <body>
-    <h1>Page Not Found</h1>
+    <div class="light-up-letters">40<span class="fade">4</span> err<span class="flicker">o</span>r p<span class="sparkle">a</span>ge</div>
+
     <p>Sorry, but the page you were trying to view does not exist.</p>
 </body>
 </html>
