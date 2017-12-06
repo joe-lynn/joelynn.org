@@ -5,6 +5,11 @@
     src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/707108/clip.ttf);
 }
 
+body {
+    height: 100%;
+    background: linear-gradient(90deg, #FFC0CB 50%, rgb(0, 217, 152) 50%);
+}
+
 .sign-two {
     -webkit-transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
     color: #A9FFDC;
