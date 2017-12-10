@@ -10,15 +10,22 @@
     src: url(../fonts/Special_Elite/SpecialElite-Regular.ttf);
 }
 
-h1 {
-    font-family: logo-font;
-    font-size: 600%;
-    color: #6600ff;
+.checky {
+    background-image: repeating-linear-gradient(0deg,
+    transparent,
+    white 20px,
+    black 20px,
+    black 40px),
+    repeating-linear-gradient(90deg,
+        transparent,
+        white 20px,
+        black 20px,
+        black 40px);
 }
 
 body {
     height: 100%;
-    background-image: -webkit-linear-gradient(175deg, #FFC0CB 50%, rgb(0, 217, 152) 50%);
+    background-image: -webkit-linear-gradient(175deg, #ff71ce 50%, #05ffa1 50%);
 }
 
 .sign-two {
