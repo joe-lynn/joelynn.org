@@ -25,10 +25,10 @@
 
 body {
     height: 100%;
-    background-image: -webkit-linear-gradient(175deg, #ff71ce 50%, #05ffa1 50%);
+    background-image: -webkit-linear-gradient(175deg, #ff71ce 50%, #000000 1%, #05ffa1 50%);
 }
 
-.sign-two {
+.j-link-brutal:visited, .sign-two {
     -webkit-transform: matrix3d(0.77,0,0.64,.001,0.00,1,0.00,0,-0.64,0,0.77,0,0,0,0,1);
     color: #A9FFDC;
     font-family: clipneon;

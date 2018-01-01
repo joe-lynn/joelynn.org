@@ -167,26 +167,26 @@ html {
     display: inline;
 }
 
-a {
+.j-link {
     color: black;
     font-family: 'Share Tech Mono', monospace;
     font-stretch: ultra-expanded;
     font-size: 200%;
 }
 
-a:link {
+.j-link:link {
     text-decoration: none;
 }
 
-a:visited {
+.j-link:visited {
     text-decoration: none;
 }
 
-a:hover {
+.j-link:hover {
     color: black;
 }
 
-a:active {
+.j-link:active {
     color: black;
 }
 
