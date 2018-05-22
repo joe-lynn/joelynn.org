@@ -36,29 +36,24 @@
 <!--[if lte IE 9]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
 <![endif]-->
-<div class="container">
-    <div class="row">
-        <div class="col-lg-1">
 
-        </div>
-        <div class="col-lg-6 col-sm-12">
-            <div>
+
+<div class="container"  style="position: relative">
+    <div class="row">
+        <div class="mx-auto">
+            <div class="container">
                 <img class="moon" src="img/purp4.jpg">
-            </div>
-            <div class="logo-center">
-                <p class="logo">Joe Lynn</p>
+                <div class="logo centered">Joe Lynn</div>
             </div>
         </div>
-        <div class="col-lg-5 col-sm-12">
-            <div align="center">
+    </div>
+    <div class="row">
+        <div class="mx-auto">
                 <a class="j-link" href="https://github.com/joe-lynn"> Work </a>
                 <p class="slash"> / </p>
                 <a class="j-link" href="#about"> About </a>
                 <p class="slash"> / </p>
                 <a class="j-link" href="#contact">Contact</a>
-                <p class="slash"> / </p>
-                <a class="j-link" href="pages/brutal.html">Brutal</a>
-            </div>
         </div>
     </div>
 </div>
@@ -66,23 +61,49 @@
 <script>
     var image = document.getElementsByClassName('moon')[0];
 
-    var aquarelle = new Aquarelle(image, 'img/mask.png', {
+    var aquarelle1 = new Aquarelle(image, 'img/mask.png', {
         fromAmplitude: 12,
         toAmplitude: 13,
         fromFrequency: 10,
         toFrequency: 11,
-        autoplay: true,
-        loop: true,
         fromOffset: 69,
-        toOffset: 70
+        toOffset: 70,
+        autoplay: true
     });
 
-    aquarelle.addEventListener('created', function() {
+    var aquarelle2 = new Aquarelle(image, 'img/mask.png', {
+        fromAmplitude: 13,
+        toAmplitude: 12,
+        fromFrequency: 11,
+        toFrequency: 10,
+        fromOffset: 70,
+        autoplay: true,
+        toOffset: 69
+    });
+
+    aquarelle1.addEventListener('created', function() {
         var canvas = this.getCanvas();
         canvas.removeAttribute('style');
         image.parentNode.insertBefore(canvas, image.nextSibling);
         image.parentNode.removeChild(image);
+        aquarelle1.start();
     });
+
+    aquarelle1.addEventListener('completed', function () {
+        var canvas = this.getCanvas();
+        var canvas2 = aquarelle2.getCanvas();
+        canvas.parentNode.insertBefore(canvas2, canvas.nextSibling);
+        canvas.remove();
+        aquarelle2.start();
+    });
+
+    aquarelle2.addEventListener('completed', function () {
+        var canvas = this.getCanvas();
+        var canvas2 = aquarelle1.getCanvas();
+        canvas.parentNode.insertBefore(canvas2, canvas.nextSibling);
+        canvas.remove();
+        aquarelle1.start();
+    })
 
 </script>
 </body>
