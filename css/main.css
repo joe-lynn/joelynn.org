@@ -2,6 +2,41 @@
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+
+#top, #bottom, #left, #right {
+    background: black;
+    position: fixed;
+}
+#left, #right {
+    top: 1%; bottom: 1%;
+    width: 10px;
+}
+#left { left: 1%; }
+#right { right: 1%; }
+
+#top, #bottom {
+    left: 1%; right: 1%;
+    height: 10px;
+}
+#top { top: 1%; }
+#bottom { bottom: 1%; }
+
+
+img{
+    width: 100%;
+}
+
+
+
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
 .moon2 {
     display: none;
 }
