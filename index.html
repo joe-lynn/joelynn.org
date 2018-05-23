@@ -42,7 +42,7 @@
     <div class="row">
         <div class="mx-auto">
             <div class="container">
-                <img class="moon" src="img/purp4.jpg">
+                <img class="moon" src="img/purpsmall.jpg">
                 <div class="logo centered">Joe Lynn</div>
             </div>
         </div>
@@ -59,6 +59,10 @@
 </div>
 
 <script>
+    var x = window.matchMedia("(max-width: 700px)")
+    console.log(x);
+    console.log(x.matches);
+
     var image = document.getElementsByClassName('moon')[0];
 
     var aquarelle1 = new Aquarelle(image, 'img/mask.png', {
