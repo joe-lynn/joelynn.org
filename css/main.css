@@ -71,9 +71,22 @@ img{
     color: black;
     font-family: 'Share Tech Mono', monospace;
     font-stretch: ultra-expanded;
-    font-size: 400%;
     display: inline;
     font-weight: bold;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@media screen and (min-width: 480px) {
+    .logo {
+        font-size: 400%;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .logo {
+        font-size: 275%;
+    }
 }
 
 .slash {
@@ -102,6 +115,7 @@ img{
 
 .j-link:hover {
     color: black;
+    background-image: url("../img/greenswatch.jpg");
 }
 
 .j-link:active {
