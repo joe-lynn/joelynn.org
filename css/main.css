@@ -27,7 +27,9 @@ img{
 }
 
 
-
+.container {
+    margin-top: 5%;
+}
 
 
 .centered {
@@ -77,6 +79,7 @@ img{
     white-space: nowrap;
 }
 
+
 @media screen and (min-width: 480px) {
     .logo {
         font-size: 400%;
@@ -86,6 +89,10 @@ img{
 @media screen and (max-width: 479px) {
     .logo {
         font-size: 275%;
+        margin-top: 5%;
+    }
+    .container {
+        margin-top: 20%;
     }
 }
 

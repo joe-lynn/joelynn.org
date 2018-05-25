@@ -10,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -60,11 +59,12 @@
 </div>
 
 <script>
-    var x = window.matchMedia("(max-width: 500px)")
+    var x = window.matchMedia("(max-width: 500px)");
+    var image;
     if(x.matches){
-        var image = document.getElementsByClassName('moon2')[0];
+        image = document.getElementsByClassName('moon2')[0];
     } else {
-        var image = document.getElementsByClassName('moon')[0];
+        image = document.getElementsByClassName('moon')[0];
     }
 
     var aquarelle1 = new Aquarelle(image, 'img/mask.png', {
@@ -74,20 +74,12 @@
         toFrequency: 11,
         fromOffset: 69,
         toOffset: 70,
-        autoplay: true
-    });
-
-    var aquarelle2 = new Aquarelle(image, 'img/mask.png', {
-        fromAmplitude: 13,
-        toAmplitude: 12,
-        fromFrequency: 11,
-        toFrequency: 10,
-        fromOffset: 70,
         autoplay: true,
-        toOffset: 69
+        loop: true
     });
 
     aquarelle1.addEventListener('created', function() {
+        console.log('canvas 1 created');
         var canvas = this.getCanvas();
         canvas.removeAttribute('style');
         image.parentNode.insertBefore(canvas, image.nextSibling);
@@ -96,20 +88,8 @@
     });
 
     aquarelle1.addEventListener('completed', function () {
-        var canvas = this.getCanvas();
-        var canvas2 = aquarelle2.getCanvas();
-        canvas.parentNode.insertBefore(canvas2, canvas.nextSibling);
-        canvas.remove();
-        aquarelle2.start();
+        aquarelle1.reverse();
     });
-
-    aquarelle2.addEventListener('completed', function () {
-        var canvas = this.getCanvas();
-        var canvas2 = aquarelle1.getCanvas();
-        canvas.parentNode.insertBefore(canvas2, canvas.nextSibling);
-        canvas.remove();
-        aquarelle1.start();
-    })
 
 </script>
 </body>
