@@ -17,7 +17,12 @@
 }
 
 .pointy {
-    cursor:url("../img/pointy.png"), auto;
+    cursor:url("../img/pointer.png"), auto;
+}
+
+.checky-parent {
+    margin-left: 75%;
+    padding-top: 10%;
 }
 
 .checky {
