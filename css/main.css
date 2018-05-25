@@ -3,6 +3,42 @@
    Custom styles
    ========================================================================== */
 
+
+
+.slash {
+    font-variant: small-caps;
+    color: black;
+    font-family: 'Share Tech Mono', monospace;
+    font-stretch: ultra-expanded;
+    font-size: 200%;
+    display: inline;
+}
+
+.j-link {
+    color: black;
+    font-family: 'Share Tech Mono', monospace;
+    font-stretch: ultra-expanded;
+    font-size: 200%;
+}
+
+.j-link:link {
+    text-decoration: none;
+}
+
+.j-link:visited {
+    text-decoration: none;
+}
+
+.j-link:hover {
+    color: black;
+    background-image: url("../img/greenswatch.jpg");
+}
+
+.j-link:active {
+    color: black;
+}
+
+
 #top, #bottom, #left, #right {
     background: black;
     position: fixed;
@@ -44,6 +80,10 @@ img{
 }
 
 .moon {
+    display: none;
+}
+
+.moon3 {
     display: none;
 }
 
@@ -96,39 +136,17 @@ img{
     }
 }
 
-.slash {
-    font-variant: small-caps;
-    color: black;
-    font-family: 'Share Tech Mono', monospace;
-    font-stretch: ultra-expanded;
-    font-size: 200%;
-    display: inline;
+@media screen and (max-width: 350px) {
+    .j-link {
+        font-size: 150%;
+    }
+    .slash {
+        font-size: 150%;
+    }
+    .container {
+        margin-top: 10%;
+    }
 }
-
-.j-link {
-    color: black;
-    font-family: 'Share Tech Mono', monospace;
-    font-stretch: ultra-expanded;
-    font-size: 200%;
-}
-
-.j-link:link {
-    text-decoration: none;
-}
-
-.j-link:visited {
-    text-decoration: none;
-}
-
-.j-link:hover {
-    color: black;
-    background-image: url("../img/greenswatch.jpg");
-}
-
-.j-link:active {
-    color: black;
-}
-
 
 /* ==========================================================================
    Base styles: opinionated defaults

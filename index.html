@@ -43,6 +43,7 @@
             <div class="container">
                 <img class="moon" src="img/purp4.jpg">
                 <img class="moon2" src="img/purp300.jpg">
+                <img class="moon3" src="img/purp400.jpg">
                 <div class="logo centered">Joe Lynn</div>
             </div>
         </div>
@@ -59,12 +60,22 @@
 </div>
 
 <script>
-    var x = window.matchMedia("(max-width: 500px)");
+    var x = window.matchMedia("(max-width: 400px)");
     var image;
     if(x.matches){
+        console.log('x matches');
         image = document.getElementsByClassName('moon2')[0];
     } else {
-        image = document.getElementsByClassName('moon')[0];
+        console.log('x no matches');
+        var y = window.matchMedia("(max-width:500px)");
+        if(y.matches){
+            console.log('y matches');
+            image = document.getElementsByClassName('moon3')[0];
+        } else {
+            console.log('y no matches');
+            image = document.getElementsByClassName('moon')[0];
+        }
+
     }
 
     var aquarelle1 = new Aquarelle(image, 'img/mask.png', {
