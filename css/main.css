@@ -3,8 +3,6 @@
    Custom styles
    ========================================================================== */
 
-
-
 .slash {
     font-variant: small-caps;
     color: black;
@@ -31,7 +29,7 @@
 
 .j-link:hover {
     color: black;
-    background-image: url("../img/greenswatch.jpg");
+    /*background-image: url("../img/greenswatch.jpg");  This is how you do the aquarelle as a background image*/
 }
 
 .j-link:active {
