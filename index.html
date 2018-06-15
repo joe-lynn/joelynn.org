@@ -113,7 +113,7 @@
 
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <embed name="plugin" src="img/poster.pdf" type="application/pdf">
+                    <img id="poster" src="img/poster.png" style="width:100%;max-width:300px">
                 </div>
             </div>
         </div>
@@ -140,6 +140,17 @@
                 </div>
                 <button type="submit" class="btn btn-default">Send</button>
             </form>
+        </div>
+        <div id="posterModal" class="poster-modal">
+
+            <!-- The Close Button -->
+            <span class="close">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
         </div>
     </div>
 </div>
@@ -196,6 +207,7 @@
         $('.about-content').collapse('hide');
         $('.work-content').collapse('hide');
     });
+
 </script>
 </body>
 </html>
