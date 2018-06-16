@@ -27,22 +27,19 @@ $( document ).ready(function() {
     };
     entireSpan.onclick = function (ev) {
         modal.style.display = 'none';
-    }
+    };
 
 
     $("#submit").click(function(e) {
         e.preventDefault();
 
-        var name = $("#name").val(),
-            email = $("#email").val(),
+        var email = $("#email").val(),
             message = $("#message").val();
-        console.log(name + email + message);
 
         $.ajax({
             type: "POST",
             url: 'https://vpdb1blgqk.execute-api.us-east-1.amazonaws.com/prod/contactJoe',
             data: JSON.stringify({
-                'name': name,
                 'email': email,
                 'message': message
             }),
