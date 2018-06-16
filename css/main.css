@@ -2,6 +2,12 @@
 /* ==========================================================================
    Custom styles
    ========================================================================== */
+.container-logo {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
 
 /* Style the Image Used to Trigger the Modal */
 #poster {
