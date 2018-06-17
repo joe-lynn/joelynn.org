@@ -32,6 +32,7 @@
     <link rel="stylesheet" href="http://github-profile.com/dist/gh-profile-card.min.css" />
     <script type="text/javascript" src="http://github-profile.com/dist/gh-profile-card.min.js"></script>
 
+    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body class="html-background-color">
 
@@ -66,54 +67,42 @@
     <div class="collapse-content">
         <div class="collapse work-content" id="work">
             <div class="row">
-                <div class="col-sm-12 col-md-4">
-                    <div class="card shadow-sm bg-white rounded">
+                <div class="card-deck">
+                    <div class="card">
                         <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <a href="https://github.com/joe-lynn"><img height="48" width="48" src="https://avatars0.githubusercontent.com/u/18252709?s=460&v=4"></a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="https://github.com/joe-lynn" style="color: #292f33; font-weight: bold; font-size: 1.2em;">Joe Lynn</a>
-                                    <a href="https://github.com/joe-lynn" style="color: #808080;">@joe-lynn</a>
-                                </div>
-                                <div class="col-md-0">
-
-                                </div>
-                                <div class="col-md-5">
-                                    <button class="btn btn-small btn-default">Follow on Github</button>
-                                </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col-md-4 border-right border-top border-bottom py-2">
-                                    <a href="https://github.com/joe-lynn?tab=repositories"> <div style="color: black; font-weight: bold;">21</div> <div style="color: #808080; font-size: 0.9em;">REPOS</div></a>
-                                </div>
-                                <div class="col-md-4 border-right border-top border-bottom py-2">
-                                    <a href="https://github.com/joe-lynn?tab=repositories"> <div style="color: black; font-weight: bold;">5</div> <div style="color: #808080; font-size: 0.9em;">STARS</div></a>
-                                </div>
-                                <div class="col-md-4 border-top border-bottom py-2">
-                                    <a href="https://github.com/joe-lynn?tab=repositories"> <div style="color: black; font-weight: bold;">3</div> <div style="color: #808080; font-size: 0.9em;">FOLLOWERS</div></a>
-                                </div>
-                            </div>
-                            <div class="row mt-2">
-                                <div class="col-md-4">
-                                    <div style="font-size: 0.8em;"><span style="background-color:#3572A5; border-radius: 50%; width: 12px; height: 12px; font-size: 12px; display: inline-block"></span> Python</div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div style="font-size: 0.8em;"><span style="background-color:#f1e05a; border-radius: 50%; width: 12px; height: 12px; font-size: 12px; display: inline-block"></span> Javascript</div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div style="font-size: 0.8em;"><span style="background-color:#e34c26; border-radius: 50%; width: 12px; height: 12px; font-size: 12px; display: inline-block"></span> HTML/CSS</div>
-                                </div>
-                            </div>
+                            <iframe src="https://joe-lynn.github.io/github-cards/?usr=joe-lynn?crd=obvert" height="405" width="310"></iframe>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">Powered by <a href="joe-lynn.github.io/github-cards/">@GitHub-Cards</a></small>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-2">
-
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <img id="poster" src="img/poster.png" style="width:100%;max-width:300px">
+                    <div class="card">
+                        <img class="card-img-top" id="poster" src="img/poster.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Senior Project</h5>
+                            <p class="card-text">A web application for analyzing a user's cybersecurity status and recommending mitigations to possible vulnerabilities. Takes in user information through a survey, calculates vectors and vulnerabilties, and returns meaningful results to protect their enterprise</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-header">
+                            Projects
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Technologies</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="https://joe-lynn.github.io/pages/brutal.html">https://joe-lynn.github.io/pages/brutal.html</a> </li>
+                            <li class="list-group-item"><a href="http://suitandtiefinancial.com/">http://suitandtiefinancial.com/</a> </li>
+                            <li class="list-group-item"><a href="http://tzar.io/">http://tzar.io/</a> </li>
+                            <li class="list-group-item"><a href="http://4cu.be/">http://4cu.be/</a> </li>
+                            <li class="list-group-item"><a href="http://biclique.com/">http://biclique.com/</a> </li>
+                        </ul>
+                        <div class="card-body">
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -131,12 +120,15 @@
             </div>
         </div>
         <div class="collapse contact-content" id="contact">
-            <form>
+            <form class="contact-form">
                 <div class="form-group">
                     <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
                 </div>
                 <div class="form-group">
                     <textarea id="message" class="form-control" placeholder="Message... " rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                    <div class="g-recaptcha" data-sitekey="6Le8VF8UAAAAAMowB71D4GM-AqmemDr9SG7-jKA0"></div>
                 </div>
                 <button id="submit" type="submit" class="btn btn-default">Send</button>
             </form>
