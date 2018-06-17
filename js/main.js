@@ -1,4 +1,3 @@
-window.onresize = function(){ location.reload(); }
 $( document ).ready(function() {
     $('.pull-down').each(function() {
         var $this = $(this);
