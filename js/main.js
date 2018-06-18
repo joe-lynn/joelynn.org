@@ -43,12 +43,11 @@ $( document ).ready(function() {
                 'message': message
             }),
             success: function(res){
-                $('#form-response').text('Sent!');
-                $('#form-response').addClass('mx-auto');
+                $('#form-response').removeClass('d-none');
                 $('.contact-form').hide();
             },
             error: function(){
-                $('#form-response').text('Sent!');
+                $('#form-response').removeClass('d-none');
                 $('.contact-form').hide();
             }
         });
