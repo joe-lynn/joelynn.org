@@ -61,72 +61,78 @@
             <a class="j-link contact-button" data-toggle="collapse" href="#contact">Contact</a>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
     <div class="collapse-content">
         <div class="collapse work-content" id="work">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card bg-light">
-                        <div class="card-body">
-                            <iframe scrolling="no" src="https://joe-lynn.github.io/github-cards/?usr=joe-lynn?crd=classique" height="220" width="420"></iframe>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Powered by <a href="joe-lynn.github.io/github-cards/">@GitHub-Cards</a></small>
-                        </div>
+            <div class="card-deck py-3">
+                <div class="card bg-light">
+                    <div class="card-body">
+                        <iframe scrolling="no" frameborder="0" src="https://joe-lynn.github.io/github-cards/?usr=joe-lynn?crd=obvert" height="400" width="300"></iframe>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Powered by <a href="joe-lynn.github.io/github-cards/">@GitHub-Cards</a></small>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card bg-light">
-                        <h5 class="card-header">Professional</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item list-group-item-light"><h5><span class="badge badge-info">GURU Sports</span> 2016</h5>Co-managed two successfully released software projects using Microsoft Kinect cameras to perform bike-sizing</li>
-                            <li class="list-group-item list-group-item-light"><h5><span class="badge badge-primary">BlueTie</span> 2017</h5>Responsible for the implementation and integration of a consumer-facing ecommerce system into an existing Django website</li>
-                            <li class="list-group-item list-group-item-light"><h5><span class="badge badge-warning">National Technical Institute for the Deaf</span> 2018</h5>Contributing to the live-closed-captioning software used by captionists at institutions around the world</li>
-                        </ul>
+                <div class="card bg-light">
+                    <h5 class="card-header">Professional</h5>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-light"><h5><span class="badge badge-info">GURU Sports</span> 2016</h5>Co-managed two successfully released software projects using Microsoft Kinect cameras to perform bike-sizing</li>
+                        <li class="list-group-item list-group-item-light"><h5><span class="badge badge-primary">BlueTie</span> 2017</h5>Responsible for the implementation and integration of a consumer-facing ecommerce system into an existing Django website</li>
+                        <li class="list-group-item list-group-item-light"><h5><span class="badge badge-warning">National Technical Institute for the Deaf</span> 2018</h5>Contributing to the live-closed-captioning software used by captionists at institutions around the world</li>
+                    </ul>
+                </div>
+                <div class="card bg-light">
+                    <img class="card-img-top img-thumbnail" id="poster" src="img/poster.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Capstone Project - Team Galorath</h5>
+                        <p class="card-text">A web application for analyzing a user's cybersecurity status and recommending mitigations to possible vulnerabilities. Takes in user information through a survey, calculates vectors and vulnerabilties, and returns meaningful results to protect their enterprise</p>
                     </div>
                 </div>
             </div>
-            <div class="row py-4">
-                <div class="col-md-6">
-                    <div class="card bg-light">
-                        <img class="card-img-top img-thumbnail" id="poster" src="img/poster.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Capstone Project - Team Galorath</h5>
-                            <p class="card-text">A web application for analyzing a user's cybersecurity status and recommending mitigations to possible vulnerabilities. Takes in user information through a survey, calculates vectors and vulnerabilties, and returns meaningful results to protect their enterprise</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card bg-light">
-                        <div class="card-header">
-                            <h5>Projects</h5>
-                            <ul class="nav nav-tabs card-header-tabs pull-right"  id="jTab" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" id="cube-tab" data-toggle="tab" href="#cube" role="tab" aria-controls="cube" aria-selected="true">4cu.be</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="tzar-tab" data-toggle="tab" href="#tzar" role="tab" aria-controls="tzar" aria-selected="false">Tzar.io</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" id="dude-tab" data-toggle="tab" href="#dude" role="tab" aria-controls="dude" aria-selected="false">BurgerDude</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="card-body">
-                            <div class="tab-content" id="jTabContent">
-                                <div class="tab-pane fade show active" id="cube" role="tabpanel" aria-labelledby="cube-tab">An HTML5 game constrained to only using one pixel (multi-pixel mode available)</div>
-                                <div class="tab-pane fade" id="tzar" role="tabpanel" aria-labelledby="tzar-tab">An HTML game aggregator that loads popular broswer games in iframes with some integration options</div>
-                                <div class="tab-pane fade" id="dude" role="tabpanel" aria-labelledby="dude-tab">A port of "BlockDude" from the Ti-83 Calculator. Enhanced graphics, same game engine</div>
+
+            <!-- BELOW IS FOR WHEN MORE PROJECTS HAVE BEEN FULLY PUBLISHED - MOVE TO MASONRY CARD LAYOUT
+                        <div class="row">
+                            <div class="col-md-6">
+                            </div>
+                            <div class="col-md-6">
+
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="row py-4">
+                            <div class="col-md-6">
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card bg-light">
+                                    <div class="card-header">
+                                        <h5>Projects</h5>
+                                        <ul class="nav nav-tabs card-header-tabs pull-right"  id="jTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" id="cube-tab" data-toggle="tab" href="#cube" role="tab" aria-controls="cube" aria-selected="true">4cu.be</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="tzar-tab" data-toggle="tab" href="#tzar" role="tab" aria-controls="tzar" aria-selected="false">Tzar.io</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" id="dude-tab" data-toggle="tab" href="#dude" role="tab" aria-controls="dude" aria-selected="false">BurgerDude</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="tab-content" id="jTabContent">
+                                            <div class="tab-pane fade show active" id="cube" role="tabpanel" aria-labelledby="cube-tab">An HTML5 game constrained to only using one pixel (multi-pixel mode available)</div>
+                                            <div class="tab-pane fade" id="tzar" role="tabpanel" aria-labelledby="tzar-tab">An HTML game aggregator that loads popular broswer games in iframes with some integration options</div>
+                                            <div class="tab-pane fade" id="dude" role="tabpanel" aria-labelledby="dude-tab">A port of "BlockDude" from the Ti-83 Calculator. Enhanced graphics, same game engine</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        -->
         </div>
         <div class="collapse about-content" id="about">
-            <div class="row">
+            <div class="row py-3">
                 <div class="col-md-6">
                     <div class="card bg-light">
                         <h5 class="card-header">LinkedIn</h5>
@@ -145,22 +151,29 @@
             </div>
         </div>
         <div class="collapse contact-content" id="contact">
-            <div class="card bg-light">
-                <div class="card-body">
-                    <form class="contact-form">
-                        <div class="form-group">
-                            <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+            <div class="row py-3">
+                <div class="col-md-2">
+
+                </div>
+                <div class="col-md-8">
+                    <div class="card bg-light">
+                        <div class="card-body">
+                            <form class="contact-form">
+                                <div class="form-group">
+                                    <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="message"  class="form-control" placeholder="Message... " rows="3"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="6Le8VF8UAAAAAMowB71D4GM-AqmemDr9SG7-jKA0"></div>
+                                </div>
+                                <button id="submit" type="submit" class="btn btn-default">Send</button>
+                            </form>
+                            <div id="form-response" class="alert alert-success d-none" role="alert">
+                                Sent!
+                            </div>
                         </div>
-                        <div class="form-group">
-                            <textarea id="message" class="form-control" placeholder="Message... " rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <div class="g-recaptcha" data-sitekey="6Le8VF8UAAAAAMowB71D4GM-AqmemDr9SG7-jKA0"></div>
-                        </div>
-                        <button id="submit" type="submit" class="btn btn-default">Send</button>
-                    </form>
-                    <div id="form-response" class="alert alert-success d-none" role="alert">
-                        Sent!
                     </div>
                 </div>
             </div>
