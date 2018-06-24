@@ -241,6 +241,9 @@
 }
 
 @media screen and (max-width: 479px) {
+    .j-link {
+        font-size: 150%;
+    }
     .logo {
         font-size: 275%;
         margin-top: 5%;
