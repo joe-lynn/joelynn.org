@@ -155,7 +155,7 @@
 }
 
 .j-link:active {
-    color: black;
+    text-shadow: 2px 2px 5px red;
 }
 
 
@@ -187,7 +187,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -80%);
+    transform: translate(-50%, -64%);
 }
 
 .moon2 {

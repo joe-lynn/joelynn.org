@@ -53,11 +53,11 @@
     </div>
     <div class="row">
         <div class="mx-auto">
-            <a class="j-link work-button" data-toggle="collapse" href="#work"> Work </a>
+            <a class="j-link work-button" id="w" data-toggle="collapse" href="#work"> Work </a>
             <p class="slash"> / </p>
-            <a class="j-link about-button" data-toggle="collapse" href="#about"> About </a>
+            <a class="j-link about-button" id="a" data-toggle="collapse" href="#about"> About </a>
             <p class="slash"> / </p>
-            <a class="j-link contact-button" data-toggle="collapse" href="#contact">Contact</a>
+            <a class="j-link contact-button" id="c" data-toggle="collapse" href="#contact">Contact</a>
         </div>
     </div>
     <div class="collapse-content">
@@ -158,8 +158,10 @@
                     <div class="card bg-light">
                         <div class="card-body">
                             <form class="contact-form">
+                                <h4>Send A Message</h4>
+                                <hr>
                                 <div class="form-group">
-                                    <input type="email" id="email" class="form-control" placeholder="Enter email">
+                                    <input type="email" id="email" class="form-control" placeholder="Your email">
                                 </div>
                                 <div class="form-group">
                                     <textarea id="message"  class="form-control" placeholder="Message... " rows="3"></textarea>
@@ -167,7 +169,7 @@
                                 <div class="form-group">
                                     <div class="g-recaptcha" data-sitekey="6Le8VF8UAAAAAMowB71D4GM-AqmemDr9SG7-jKA0"></div>
                                 </div>
-                                <button id="submit" type="submit" class="btn btn-default">Send</button>
+                                <button id="submit" type="submit" class="btn btn-secondary">Send</button>
                             </form>
                             <div id="form-response" class="alert alert-success d-none" role="alert">
                                 Sent!

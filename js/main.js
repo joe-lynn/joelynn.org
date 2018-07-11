@@ -1,4 +1,21 @@
 $( document ).ready(function() {
+
+    var workSelected = false;
+    var aboutSelected = false;
+    var contactSelected = false;
+
+    $('.j-link').click(function (e) {
+        if (this.id === 'w') {
+            workSelected = !workSelected;
+        } else if (this.id === 'a') {
+            aboutSelected = !aboutSelected;
+        } else {
+            contactSelected = !contactSelected;
+        }
+        $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+        location.hash = this.href;
+    });
+
     $('.pull-down').each(function() {
         var $this = $(this);
         $this.css('margin-top', $this.parent().height() - $this.height())
