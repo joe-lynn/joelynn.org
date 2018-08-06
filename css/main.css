@@ -5,6 +5,9 @@
 
 .card { /* Add shadows to create the "card" effect */ box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); transition: 0.3s; }
 
+.badge {
+    white-space: normal;
+}
 
 @media (min-width: 34em) {
     .card-columns {
@@ -153,11 +156,6 @@
     color: black;
     /*background-image: url("../img/greenswatch.jpg");  This is how you do the aquarelle as a background image*/
 }
-
-.j-link:active {
-    text-shadow: 2px 2px 5px red;
-}
-
 
 #top, #bottom, #left, #right {
     background: black;

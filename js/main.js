@@ -7,13 +7,16 @@ $( document ).ready(function() {
     $('.j-link').click(function (e) {
         if (this.id === 'w') {
             workSelected = !workSelected;
+            location.hash = 'work';
         } else if (this.id === 'a') {
             aboutSelected = !aboutSelected;
+            location.hash = 'about';
         } else {
             contactSelected = !contactSelected;
+            location.hash = 'contact';
         }
         $("html, body").animate({ scrollTop: $(document).height() }, "slow");
-        location.hash = this.href;
+
     });
 
     $('.pull-down').each(function() {
