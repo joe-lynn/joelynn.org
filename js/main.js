@@ -4,6 +4,14 @@ $( document ).ready(function() {
     var aboutSelected = false;
     var contactSelected = false;
 
+    if(location.hash === '#work'){
+        $('#work').addClass('show')
+    } else if (location.hash === '#about') {
+        $('#about').addClass('show')
+    }  else if (location.hash === '#contact') {
+        $('#contact').addClass('show')
+    }
+
     $('.j-link').click(function (e) {
         if (this.id === 'w') {
             workSelected = !workSelected;
@@ -15,7 +23,6 @@ $( document ).ready(function() {
             contactSelected = !contactSelected;
             location.hash = 'contact';
         }
-        $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
     });
 
